@@ -1,0 +1,111 @@
+/*introduction2*/
+#introduction {
+  --brand: #ff4d29;
+  --dark: #092032;
+  --body: #516171;
+  --border: rgba(0, 0, 0, 0.08);
+  --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+  font-family: "Barlow", sans-serif;
+  color: var(--body);
+  line-height: 1.7;
+}
+
+#introduction .info-box {
+  align-items: center;
+  display: flex;
+}
+
+#introduction section {
+  /* padding-top: calc(80 / 576 * 100vw * var(--bs-var)); */
+  padding-bottom: calc(80 / 576 * 100vw * var(--bs-var));
+}
+
+#introduction .image.img-about .image-item {
+  width: calc(75 / 576 * 100vw * var(--bs-var));
+  height: calc(76 / 576 * 100vw * var(--bs-var));
+  line-height: normal;
+}
+#introduction .image.img-about .image-item img {
+  height: 100%;
+  width: 100%;
+}
+
+#introduction .title .word p.titleFive {
+  /* font-size: calc(20 / 576 * 100vw * var(--bs-var)); */
+  font-weight: 700;
+  color: var(--dark);
+  font-size: calc(20 / 576 * 100vw * var(--bs-var));
+}
+
+#introduction .title {
+  margin-bottom: 0.5rem !important;
+  margin-top: 0;
+}
+
+#introduction .title p {
+  margin-bottom: 0 !important;
+}
+
+#introduction .image.img-about2 .image-item {
+  width: calc(452 / 576 * 100vw * var(--bs-var));
+  height: calc(458 / 576 * 100vw * var(--bs-var));
+  line-height: normal;
+}
+#introduction .image.img-about2 .image-item img {
+  height: 100%;
+  width: 100%;
+}
+
+/* 平板樣式 */
+@media (min-width: 576px) {
+  #introduction .image.img-about .image-item {
+    width: calc(75 / 768 * 100vw * var(--bs-var));
+    height: calc(76 / 768 * 100vw * var(--bs-var));
+    line-height: normal;
+  }
+
+  #introduction .title .word p.titleFive {
+    /* font-size: calc(20 / 768 * 100vw * var(--bs-var)); */
+    font-weight: 700;
+    color: var(--dark);
+    font-size: calc(20 / 768 * 100vw * var(--bs-var));
+  }
+
+  #introduction .image.img-about2 .image-item {
+    width: calc(452 / 768 * 100vw * var(--bs-var));
+    height: calc(458 / 768 * 100vw * var(--bs-var));
+    line-height: normal;
+  }
+
+  #introduction section {
+    padding-top: calc(80 / 768 * 100vw * var(--bs-var));
+    padding-bottom: calc(80 / 768 * 100vw * var(--bs-var));
+  }
+}
+
+/* 電腦版樣式 */
+@media (min-width: 768px) {
+  #introduction .image.img-about .image-item {
+    width: calc(85 / 1200 * 100vw * var(--bs-var));
+    height: calc(86 / 1200 * 100vw * var(--bs-var));
+    line-height: normal;
+  }
+
+  #introduction .title .word p.titleFive {
+    /* font-size: calc(20 / 1200 * 100vw * var(--bs-var)); */
+    font-weight: 700;
+    color: var(--dark);
+    font-size: calc(20 / 1200 * 100vw * var(--bs-var));
+  }
+
+  #introduction .image.img-about2 .image-item {
+    width: calc(454 / 1200 * 100vw * var(--bs-var));
+    height: calc(458 / 1200 * 100vw * var(--bs-var));
+    line-height: normal;
+  }
+
+  #introduction section {
+    padding-top: calc(80 / 1200 * 100vw * var(--bs-var));
+    padding-bottom: calc(80 / 1200 * 100vw * var(--bs-var));
+  }
+}
