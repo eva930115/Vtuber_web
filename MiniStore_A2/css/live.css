@@ -1,0 +1,106 @@
+#live {
+    --accent-color: #717171;
+    --white-color: #fff;
+    --black-color: #000;
+    --gray-color: #f3f3f3;
+    --gray-color-300: #d8d8d8;
+    --gray-color-500: #aeaeae;
+    --gray-color-800: #3a3a3a;
+    --light-gray-color: #d7dddf;
+    --primary-color: #72aec8;
+    --bs-primary-rgb: 114, 174, 200;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --light-blue-color: #edf1f3;
+    --navbar-color-color: #131814;
+    --swiper-theme-color: #4a4a4a;
+    --swiper-pagination-color: #4a4a4a;
+}
+
+/* Fonts */
+#live {
+    --body-font: "Lato", sans-serif;
+    --heading-font: "Jost", sans-serif;
+}
+
+#live a {
+    color: var(--dark-color);
+    text-decoration: none;
+    transition: 0.3s color ease-out;
+}
+
+#live a.light {
+    color: var(--light-color);
+}
+
+#live a:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 600px) {
+    #live {
+        --header-height: 100px;
+        --header-height-min: 80px;
+    }
+}
+
+
+#live .bg-light {
+  background: var(--light-color);
+}
+#live .bg-light-blue {
+  background: var(--light-blue-color);
+}
+#live .padding-xlarge {
+  padding-top: 9.5em;
+  padding-bottom: 9.5em;
+}
+#live .btn.btn-rounded,
+#live .btn.btn-rounded::after {
+  border-radius: calc( 6 / 576 * 100vw * var(--bs-var));
+}
+#live .btn-rounded-none,
+#live .btn-rounded-none::after {
+  border-radius: 0;
+}
+@media (min-width: 576px) {
+#live .bg-light {
+  background: var(--light-color);
+}
+#live .bg-light-blue {
+  background: var(--light-blue-color);
+}
+#live .padding-xlarge {
+  padding-top: 9.5em;
+  padding-bottom: 9.5em;
+}
+#live .btn.btn-rounded,
+#live .btn.btn-rounded::after {
+  border-radius: calc( 6 / 768 * 100vw * var(--bs-var));
+}
+#live .btn-rounded-none,
+#live .btn-rounded-none::after {
+  border-radius: 0;
+}
+}
+@media (min-width: 768px) {
+#live .bg-light {
+  background: var(--light-color);
+}
+#live .bg-light-blue {
+  background: var(--light-blue-color);
+}
+#live .padding-xlarge {
+  padding-top: 9.5em;
+  padding-bottom: 9.5em;
+}
+#live .btn.btn-rounded,
+#live .btn.btn-rounded::after {
+  border-radius: calc( 6 / 1200 * 100vw * var(--bs-var));
+}
+#live .btn-rounded-none,
+#live .btn-rounded-none::after {
+  border-radius: 0;
+}
+}

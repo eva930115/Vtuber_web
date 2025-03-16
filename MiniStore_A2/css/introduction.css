@@ -1,0 +1,292 @@
+#introduction {
+    --accent-color: #717171;
+    --white-color: #fff;
+    --black-color: #000;
+    --gray-color: #f3f3f3;
+    --gray-color-300: #d8d8d8;
+    --gray-color-500: #aeaeae;
+    --gray-color-800: #3a3a3a;
+    --light-gray-color: #d7dddf;
+    --primary-color: #72aec8;
+    --bs-primary-rgb: 114, 174, 200;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --light-blue-color: #edf1f3;
+    --navbar-color-color: #131814;
+    --swiper-theme-color: #4a4a4a;
+    --swiper-pagination-color: #4a4a4a;
+}
+
+/* Fonts */
+#introduction {
+    --body-font: "Lato", sans-serif;
+    --heading-font: "Jost", sans-serif;
+}
+
+#introduction {
+    font-family: var(--body-font);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0;
+}
+
+    #introduction p {
+        font-size: 1.2em;
+        color: var(--gray-color-500);
+    }
+
+#introduction .bg-light {
+    background: var(--light-color);
+}
+
+#introduction .bg-light-blue {
+    background: var(--light-blue-color);
+}
+
+#introduction .padding-large {
+    padding-top: 7em;
+    padding-bottom: 7em;
+}
+
+#introduction h3.card-title,
+#introduction h3.cart-title {
+    font-size: 1.5em;
+}
+
+#introduction .btn.btn-medium {
+    padding: 0.8em 2.8em;
+    font-size: 1.1em;
+    letter-spacing: calc( 2 / 576 * 100vw * var(--bs-var));
+}
+
+#introduction .btn.btn-rounded,
+#introduction .btn.btn-rounded::after {
+    border-radius: calc( 6 / 576 * 100vw * var(--bs-var));
+}
+
+#introduction .btn-rounded-none,
+#introduction .btn-rounded-none::after {
+    border-radius: 0;
+}
+
+#introduction #billboard .swiper-arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+#introduction .swiper-icon.swiper-arrow svg {
+    fill: var(--light-gray-color);
+}
+
+#introduction .swiper-icon.swiper-arrow:hover svg,
+#introduction .swiper-icon.swiper-arrow:focus svg {
+    fill: var(--primary-color);
+}
+
+#introduction .swiper {
+    padding: 0.1rem !important;
+}
+
+#introduction #billboard .swiper-arrow.swiper-arrow-prev {
+    left: 0;
+}
+
+#introduction #billboard .swiper-arrow.swiper-arrow-next {
+    right: 0;
+}
+
+#introduction .icon-box .icon-box-icon svg {
+    width: calc( 26 / 576 * 100vw * var(--bs-var));
+    height: calc( 26 / 576 * 100vw * var(--bs-var));
+    fill: var(--primary-color);
+}
+/*------------ Sidebar -----------*/
+#introduction .sidebar-post-item h4.card-title {
+    font-size: 1.2em;
+}
+
+@media (min-width: 576px) {
+    #introduction .bg-light {
+        background: var(--light-color);
+    }
+
+    #introduction .bg-light-blue {
+        background: var(--light-blue-color);
+    }
+
+    #introduction .padding-large {
+        padding-top: 7em;
+        padding-bottom: 7em;
+    }
+
+    #introduction h3.card-title,
+    #introduction h3.cart-title {
+        font-size: 1.5em;
+    }
+
+    #introduction .btn.btn-medium {
+        padding: 0.8em 2.8em;
+        font-size: 1.1em;
+        letter-spacing: calc( 2 / 768 * 100vw * var(--bs-var));
+    }
+
+    #introduction .btn.btn-rounded,
+    #introduction .btn.btn-rounded::after {
+        border-radius: calc( 6 / 768 * 100vw * var(--bs-var));
+    }
+
+    #introduction .btn-rounded-none,
+    #introduction .btn-rounded-none::after {
+        border-radius: 0;
+    }
+
+    #introduction #billboard .swiper-arrow {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+    }
+
+    #introduction .swiper-icon.swiper-arrow svg {
+        fill: var(--light-gray-color);
+    }
+
+    #introduction .swiper-icon.swiper-arrow:hover svg,
+    #introduction .swiper-icon.swiper-arrow:focus svg {
+        fill: var(--primary-color);
+    }
+
+    #introduction .swiper {
+        padding: 0.1rem !important;
+    }
+
+    #introduction #billboard .swiper-arrow.swiper-arrow-prev {
+        left: 0;
+    }
+
+    #introduction #billboard .swiper-arrow.swiper-arrow-next {
+        right: 0;
+    }
+
+    #introduction .icon-box .icon-box-icon svg {
+        width: calc( 26 / 768 * 100vw * var(--bs-var));
+        height: calc( 26 / 768 * 100vw * var(--bs-var));
+        fill: var(--primary-color);
+    }
+    /*------------ Sidebar -----------*/
+    #introduction .sidebar-post-item h4.card-title {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 768px) {
+    #introduction .bg-light {
+        background: var(--light-color);
+    }
+
+    #introduction .bg-light-blue {
+        background: var(--light-blue-color);
+    }
+
+    #introduction .padding-large {
+        padding-top: 7em;
+        padding-bottom: 7em;
+    }
+
+    #introduction h3.card-title,
+    #introduction h3.cart-title {
+        font-size: 1.5em;
+    }
+
+    #introduction .btn.btn-medium {
+        padding: 0.8em 2.8em;
+        font-size: 1.1em;
+        letter-spacing: calc( 2 / 1200 * 100vw * var(--bs-var));
+    }
+
+    #introduction .btn.btn-rounded,
+    #introduction .btn.btn-rounded::after {
+        border-radius: calc( 6 / 1200 * 100vw * var(--bs-var));
+    }
+
+    #introduction .btn-rounded-none,
+    #introduction .btn-rounded-none::after {
+        border-radius: 0;
+    }
+
+    #introduction #billboard .swiper-arrow {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+    }
+
+    #introduction .swiper-icon.swiper-arrow svg {
+        fill: var(--light-gray-color);
+    }
+
+    #introduction .swiper-icon.swiper-arrow:hover svg,
+    #introduction .swiper-icon.swiper-arrow:focus svg {
+        fill: var(--primary-color);
+    }
+
+    #introduction .swiper {
+        padding: 0.1rem !important;
+    }
+
+    #introduction #billboard .swiper-arrow.swiper-arrow-prev {
+        left: 0;
+    }
+
+    #introduction #billboard .swiper-arrow.swiper-arrow-next {
+        right: 0;
+    }
+
+    #introduction .icon-box .icon-box-icon svg {
+        width: calc( 26 / 1200 * 100vw * var(--bs-var));
+        height: calc( 26 / 1200 * 100vw * var(--bs-var));
+        fill: var(--primary-color);
+    }
+    /*------------ Sidebar -----------*/
+    #introduction .sidebar-post-item h4.card-title {
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #billboard .banner-content {
+        margin-top: 210px;
+    }
+
+    #billboard .image-holder {
+        margin-top: -390px;
+        opacity: 0.3;
+    }
+
+    #billboard .swiper-arrow {
+        top: 400px;
+    }
+
+    .chevron-left {
+        margin-left: -10vw;
+    }
+
+    .chevron-right {
+        margin-right: -30vw;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    #company-services .icon-box {
+        flex-wrap: wrap;
+    }
+}
