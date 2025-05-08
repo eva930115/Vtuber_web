@@ -13,7 +13,7 @@
             <p class="date">{{ item.date }}</p>
             <p class="description">{{ item.description }}</p>
             <a v-if="item.link" :href="item.link" target="_blank" class="read-more">
-              Read More <i class="fas fa-arrow-right"></i>
+              Read More
             </a>
           </div>
         </article>
@@ -23,30 +23,41 @@
 </template>
 
 <script setup>
+import doraemonCover from '@/assets/news/doraemon_cover.jpg'
+import collabStream from '@/assets/news/collab_stream.jpg'
+import newMerch from '@/assets/news/new_merch.jpg'
+
 const newsItems = [
   {
     date: '2024-03-20',
     title: '新曲リリースのお知らせ',
     description: '新曲「Song Title」のリリースが決定しました！詳細は後日お知らせします。',
-    image: '/src/assets/news/doraemon_cover.jpg',
+    image: doraemonCover,
     link: '#'
   },
   {
     date: '2024-03-19',
     title: 'コラボ配信のお知らせ',
     description: '3月25日に他のVTuberとのコラボ配信が決定しました！',
-    image: '/src/assets/news/collab_stream.jpg',
+    image: collabStream,
     link: '#'
   },
   {
     date: '2024-03-18',
     title: '新グッズ発売のお知らせ',
     description: '新作グッズの発売が決定しました。オンラインショップでご購入いただけます。',
-    image: '/src/assets/news/new_merch.jpg',
+    image: newMerch,
     link: '#'
   }
 ]
 </script>
+
+<style>
+/* 全局樣式 */
+.fa-arrow-right {
+  color: #042183;
+}
+</style>
 
 <style scoped>
 .news {
@@ -55,6 +66,7 @@ const newsItems = [
   min-height: 100vh;
   color: #042183;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .news-container {
@@ -89,6 +101,7 @@ h1 {
   transform: translateY(-5px);
 }
 
+
 .news-image {
   aspect-ratio: 16/9;
   background: #F7F7F7;
@@ -99,6 +112,7 @@ h1 {
   height: 100%;
   object-fit: cover;
 }
+
 
 .news-content {
   padding: 1.5rem;
@@ -142,17 +156,15 @@ h1 {
   opacity: 0.8;
 }
 
+
 /* 電腦版樣式 */
 @media (min-width: 1024px) {
   .news-container {
     padding: 6rem 4rem;
-    width: 100%;
   }
 
   .news-grid {
     gap: 3rem;
-    max-width: 1920px;
-    margin: 0 auto;
   }
 
   .news-content h3 {

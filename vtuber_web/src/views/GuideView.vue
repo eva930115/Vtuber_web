@@ -5,7 +5,7 @@
 
       <div class="guide-sections">
         <section class="guide-section">
-          <h2><i class="fas fa-star"></i> 基本規則</h2>
+          <h2>基本規則</h2>
           <div class="rule-list">
             <div v-for="(rule, index) in basicRules" :key="index" class="rule-item">
               <span class="rule-number">{{ index + 1 }}</span>
@@ -15,7 +15,7 @@
         </section>
 
         <section class="guide-section">
-          <h2><i class="fas fa-comments"></i> 聊天室規則</h2>
+          <h2>聊天室規則</h2>
           <div class="rule-list">
             <div v-for="(rule, index) in chatRules" :key="index" class="rule-item">
               <span class="rule-number">{{ index + 1 }}</span>
@@ -25,12 +25,11 @@
         </section>
 
         <section class="guide-section">
-          <h2><i class="fas fa-question-circle"></i> 常見問題</h2>
+          <h2>常見問題</h2>
           <div class="faq-list">
             <div v-for="(faq, index) in faqs" :key="index" class="faq-item">
               <div class="faq-question" @click="toggleFaq(index)">
                 <h3>{{ faq.question }}</h3>
-                <i :class="['fas', faq.isOpen ? 'fa-chevron-up' : 'fa-chevron-down']"></i>
               </div>
               <div class="faq-answer" :class="{ 'open': faq.isOpen }">
                 <p>{{ faq.answer }}</p>
@@ -40,10 +39,10 @@
         </section>
 
         <section class="guide-section">
-          <h2><i class="fas fa-heart"></i> 支持方式</h2>
+          <h2>支持方式</h2>
           <div class="support-options">
             <div v-for="(option, index) in supportOptions" :key="index" class="support-item">
-              <i :class="option.icon"></i>
+              <img :src="option.image" :alt="option.title" class="support-icon">
               <h3>{{ option.title }}</h3>
               <p>{{ option.description }}</p>
             </div>
@@ -93,19 +92,19 @@ const faqs = ref([
 
 const supportOptions = [
   {
-    icon: 'fas fa-crown',
     title: '會員訂閱',
-    description: '成為會員可以獲得專屬徽章、表情符號等特權，並支持VTuber的創作活動。'
+    description: '成為會員可以獲得專屬徽章、表情符號等特權，並支持VTuber的創作活動。',
+    image: '/src/assets/support/subscribe.png'
   },
   {
-    icon: 'fas fa-shopping-bag',
     title: '購買周邊',
-    description: '購買官方周邊商品，支持VTuber的創作活動，同時獲得精美的周邊商品。'
+    description: '購買官方周邊商品，支持VTuber的創作活動，同時獲得精美的周邊商品。',
+    image: '/src/assets/support/buy.png'
   },
   {
-    icon: 'fas fa-share-alt',
     title: '分享推廣',
-    description: '在社交媒體上分享VTuber的內容，幫助更多人認識和了解VTuber。'
+    description: '在社交媒體上分享VTuber的內容，幫助更多人認識和了解VTuber。',
+    image: '/src/assets/support/share.png'
   }
 ]
 
@@ -114,11 +113,22 @@ const toggleFaq = (index) => {
 }
 </script>
 
+<style>
+/* 全局樣式 */
+.fa-star,
+.fa-comments,
+.fa-question-circle,
+.fa-heart {
+  color: #042183;
+  margin-right: 0.5rem;
+}
+</style>
+
 <style scoped>
 .guide {
-  padding-top: 100px;
-  min-height: 100vh;
+  padding-top: 80px;
   background-color: #DEEBEC;
+  min-height: 100vh;
   color: #000;
 }
 
@@ -258,6 +268,12 @@ h2 {
 .support-item p {
   color: #888;
   line-height: 1.6;
+}
+
+.support-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {

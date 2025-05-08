@@ -25,7 +25,7 @@
             <p class="date">{{ video.date }}</p>
             <p class="description">{{ video.description }}</p>
             <a :href="video.link" target="_blank" class="watch-btn">
-              <i class="fas fa-play"></i> 觀看影片
+              觀看影片
             </a>
           </div>
         </article>
@@ -123,6 +123,13 @@ const filteredVideos = computed(() => {
   return videos.filter(video => video.category === selectedCategory.value)
 })
 </script>
+
+<style>
+/* 全局樣式 */
+.fa-play {
+  color: #042183;
+}
+</style>
 
 <style scoped>
 .movie {

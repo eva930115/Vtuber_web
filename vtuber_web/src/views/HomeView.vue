@@ -228,6 +228,9 @@ const newsItems = [
   align-items: center;
   justify-content: center;
   background: #DEEBEC;
+  margin: 0 auto;        /* 置中 */
+  padding: 0 4rem;       /* 左右空間 */
+  
 }
 
 .video-container {
@@ -235,6 +238,8 @@ const newsItems = [
   width: 1153px;
   height: 636px;
   background: #DEEBEC;
+  
+  
 }
 
 .video-container iframe {

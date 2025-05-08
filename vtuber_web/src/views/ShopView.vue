@@ -30,7 +30,6 @@
               :disabled="product.isSoldOut"
               @click="addToCart(product)"
             >
-              <i class="fas fa-shopping-cart"></i> 
               {{ product.isSoldOut ? '已售罄' : '加入購物車' }}
             </button>
           </div>
@@ -115,6 +114,13 @@ const addToCart = (product) => {
   console.log('加入購物車:', product.name)
 }
 </script>
+
+<style>
+/* 全局樣式 */
+.fa-shopping-cart {
+  color: #042183;
+}
+</style>
 
 <style scoped>
 .shop {
@@ -221,9 +227,10 @@ h1 {
   padding: 1rem;
 }
 
-.product-info h3 {
+.product-info h2 {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
+  color: #042183;
 }
 
 .price {
